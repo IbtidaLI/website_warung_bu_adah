@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warung Bu Adah</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+<header>
+    <h1>Menu & Harga</h1>
+    <p>Warung Bu Adah</p>
+</header>
+
+<h2 class="section-title">Galery Menu</h2>
+<div class="produk-grid">
+  <div class="card">
+    <img src="cireng.jpg" alt="Cireng Isi" class="menu-img">
+    <div class="card-body">
+      <h3>Cireng Isi</h3>
+      <p class="price">Rp 5.000 / 2 cireng</p>
+    </div>
+    <p class="desc">Cireng crispy dengan isian ayam suwir dengan bumbu pedas yang kaya dengan bumbu membuat rasa pedas dan gurih menyatu dengan baik dan enak. Selanjutnya cireng isi keju, di Warung Bu Adah cirengnya menggunakan isian cheddar yang gurih favorit pelanggan. Menu ini sering kali menjadi incaran para penduduk sekolah baik pada saat sebelum aktivitas kegiatan belajar dimulai atau saat istirahat sehingga jika mau membelinya kalian harus beli saat pagi ya, atau saat bel istirahat baru berbunyi!!</p>
+  </div>
+
+  <div class="card">
+    <img src="spatula.png" alt="Spaghetti Tulang" class="menu-img">
+    <div class="card-body">
+      <h3>Spaghetti Tulang</h3>
+      <p class="price">Rp 5.000 / porsi</p>
+    </div>
+    <p class="desc">Spaghetti yang di masak langsung saus bolognaise gurih dan manis. terdapat toping tulang dan ceker yang memberikan rasa gurih yang lebih banyak kepada spaghetti dari kaldunya yang keluar saat dimasak, ada juga toping siomay mini yang renyah buat kamu yang tidak suka tulang atau ceker, untuk yang suka ketiga toping juga ada varian yang bisa mix semua toping loh. Menu ini ada saat istirahat, jadi kalo kamu ke kantin saat istirahat jangan lupa untuk beli spaghetti ini ya!!</p>
+  </div>
+
+  <div class="card">
+    <img src="katsu.jpg" alt="Nasi Katsu Ayam Fillet" class="menu-img">
+    <div class="card-body">
+      <h3>Nasi Katsu Ayam Fillet</h3>
+      <p class="price">Rp 5.000 / porsi</p>
+    </div>
+    <p class="desc">Ayam katsu crispy yang renyah dengan saus merahkhas Bu Adah, ditambah dengan nasi yang bisa mengenyangkan, juga selada yang menambah nilai keindahan saat memakan menjadi pilihan yang tepat untuk kamu yang ingin makanan yang murah, mengeyangkan, juga enak nih. Menu ini sudah ada walaupun masih bagi, cocok untuk kamu yang inggin sarapan sengan nasi sebelum aktivitas kegiatan belajar dimulai.</p>
+  </div>
+
+  <div class="card">
+    <img src="sosis.jpg" alt="Sosis" class="menu-img">
+    <div class="card-body">
+      <h3>Sosis</h3>
+      <p class="price">>Rp 5.000 / 2 sosis</p>
+    </div>
+    <p class="desc">Makanan ini cocok untuk kamu yang suka sosis nih, jadi makanan ini berisi sosis di bagian dalamnya kemudian dilapisi dengan adonan rahasia dari Bu Adah ditambah lagi dengan tepung panir yang membuatnya krispii. Menu ini bisa kamu hias atau beri rasa tambahan dengan tiga saus yang di siapkan oleh Bu Adah yaitu saus pedas, saus tomat, dan mayonnaise  yang enak. Menu ini sudah ada saat pagi hari, buatkamu yang mau sarapan tapi tidak mau nasi menu ini bisa kamu jadikan pilihan untuk sarapan!!</p>
+  </div>
+</div>
+
+<div id="menu-desc" class="desc-area">
+  <h3 class="des-title">Deskripsi Menu</h3>
+  <p id="desc-text"></p>
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+  const descText = document.getElementById('desc-text');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const desc = card.querySelector('.desc').textContent;
+      descText.textContent = desc;
+    });
+  });
+</script>
+
+<footer class="footer py-4 bg-white">
+    <div class="container">
+        <div class="d-flex flex-column text-center text-md-start text-body">
+            <div class="copyright mb-2">
+                © 2025 - Warung Bu Adah — UMKM Kuliner SMK IGAPIN BANDUNG
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
